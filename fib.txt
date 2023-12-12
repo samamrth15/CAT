@@ -1,0 +1,12 @@
+def fibonacci(n, a=0, b=1):
+    if n <= 0:
+        return []
+    else:
+        return [a] + fibonacci(n-1, b, a+b)
+
+
+num_terms = int(input("Enter the number : "))
+
+
+fib_series = fibonacci(num_terms)
+print("Fibonacci Series:", fib_series)
