@@ -1,0 +1,18 @@
+n = int(input("Enter the number of elements: "))
+arr = []
+
+for i in range(n):
+    x = int(input("Enter element {}: ".format(i+1)))
+    arr.append(x)
+
+key = int(input("Enter the key element: "))
+
+found = False
+for i in range(n):
+    if arr[i] == key:
+        print("Element found at position {}".format(i))
+        found = True
+        break
+
+if not found:
+    print("Element not present in the list")
